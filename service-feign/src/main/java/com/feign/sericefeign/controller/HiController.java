@@ -18,4 +18,9 @@ public class HiController {
     public String sayHi(@RequestParam String name) {
         return schedualServiceHi.sayHiFromClientOne( name );
     }
+
+    @GetMapping(value = "/insert")
+    public String insert(@RequestParam String name) {
+        return schedualServiceHi.insert( name );
+    }
 }

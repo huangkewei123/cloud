@@ -6,6 +6,8 @@ import com.cloud.servicehi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 
 /**
  * 用户Service实现类
@@ -16,7 +18,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
+    @Resource
     private UserMapper userMapper;
     
     public Integer updateByPrimaryKeySelective(User user){

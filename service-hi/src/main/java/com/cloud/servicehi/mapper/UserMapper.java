@@ -11,7 +11,7 @@ import org.jboss.logging.Param;
  * @since 2014年7月5日 上午11:49:57
  **/
 public interface UserMapper {
-    int deleteByPrimaryKey(Integer id);
+    int deleteByPrimaryKey(String id);
 
     int insert(User record);
 
